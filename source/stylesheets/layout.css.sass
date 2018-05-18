@@ -1,5 +1,10 @@
 @import 'config'
 
+#active
+  background-color: #080808
+  a
+    color: white
+
 body
   background: #{"{{ theme.background_color }}"}
   color: #{"{{ theme.text_color }}"}
@@ -40,8 +45,10 @@ header
   background-color: #222
 
   .container
-    width: 70%
+    width: 54%
     margin: auto
+    .nav 
+      display: inline
 
   img 
     padding-top: 5px
@@ -52,6 +59,15 @@ header
 
     &:hover
       color: #333
+  ul
+    margin-left: 0px
+    padding-left: 0px
+    padding-right: 100px
+    display: inline
+    float: right
+  ul li 
+    display: inline
+    padding: 10px
 
 h1, h2, h3, h4, h5
   font-family: #{"{{ theme.header_font | font_family }}"}
